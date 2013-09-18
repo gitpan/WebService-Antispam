@@ -1,22 +1,23 @@
---- #YAML:1.0
-name:               WebService-Antispam
-version:            1.01
-abstract:           test visitors accounts or posts for spam 
+---
+abstract: 'test visitors accounts or posts for spam '
 author:
-    - CleanTalk <welcome@cleantalk.ru>
-license:            Artistic_2_0
-distribution_type:  module
-configure_requires:
-    ExtUtils::MakeMaker:  0
+  - 'CleanTalk <welcome@cleantalk.ru>'
 build_requires:
-    Test::More:  0
-requires:
-    perl:  5.006
-no_index:
-    directory:
-        - t
-        - inc
-generated_by:       ExtUtils::MakeMaker version 6.56
+  Test::More: 0
+configure_requires:
+  ExtUtils::MakeMaker: 0
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 6.72, CPAN::Meta::Converter version 2.120351'
+license: unknown
 meta-spec:
-    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
-    version:  1.4
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: WebService-Antispam
+no_index:
+  directory:
+    - t
+    - inc
+requires:
+  JSON::XS: 0
+  perl: 5.006
+version: 1.02
