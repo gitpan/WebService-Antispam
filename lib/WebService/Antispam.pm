@@ -6,7 +6,7 @@ use warnings FATAL => 'all';
 use JSON::XS;
 use LWP::UserAgent;
 
-our $VERSION = '1.02'; 
+our $VERSION = '1.03'; 
 
 # JSON object
 my $json_xs = JSON::XS->new;

@@ -1,5 +1,8 @@
 Revision history for WebService-Antispam
 
+1.03    2013-09-19 
+        Add one more dependencies in Makefile.PL 
+
 1.02    2013-09-18 
         Add dependencies in Makefile.PL 
 
