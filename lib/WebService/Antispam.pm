@@ -6,7 +6,7 @@ use warnings FATAL => 'all';
 use JSON::XS;
 use LWP::UserAgent;
 
-our $VERSION = '1.03'; 
+our $VERSION = '1.04'; 
 
 # JSON object
 my $json_xs = JSON::XS->new;
@@ -48,6 +48,7 @@ sub request {
     
     $$params{'auth_key'} = $connection_params{'auth_key'};
     $$params{'method_name'} = $connection_params{'method_name'} if !defined($$params{'method_name'});
+    $$params{'agent'} = $connection_params{'agent'} if !defined($$params{'agent'});
 
     my $ua = LWP::UserAgent->new;
     $ua->timeout($connection_params{'connection_timeout'});
